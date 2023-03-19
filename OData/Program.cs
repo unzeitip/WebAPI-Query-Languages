@@ -15,7 +15,7 @@ builder.Services.AddDbContext<ImdbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("imdb")));
 
 builder.Services.AddControllers().AddOData(
-    options => options.EnableQueryFeatures(250)
+    options => options.EnableQueryFeatures(null)
     .AddRouteComponents("api", modelBuilder.GetEdmModel()));
 
 var app = builder.Build();
