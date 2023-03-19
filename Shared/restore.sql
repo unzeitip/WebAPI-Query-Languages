@@ -1,0 +1,1 @@
+RESTORE DATABASE imdb FROM DISK='/tmp/imdb_ijs.bak';

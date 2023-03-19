@@ -1,0 +1,18 @@
+FROM mcr.microsoft.com/mssql/server:2019-latest AS build
+ENV ACCEPT_EULA=Y
+ENV SA_PASSWORD=unzepe01@upol.cz
+
+WORKDIR /tmp
+COPY /imdb_ijs.bak imdb_ijs.bak
+COPY ./restore.sql restore.sql
+
+RUN ( /opt/mssql/bin/sqlservr & ) | grep -q "Service Broker manager has started" \
+    && sleep 5 \
+    && /opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P unzepe01@upol.cz -i /tmp/restore.sql \
+    && pkill sqlservr
+
+FROM mcr.microsoft.com/mssql/server:2019-latest AS release
+
+ENV ACCEPT_EULA=Y
+
+COPY --from=build /var/opt/mssql/data /var/opt/mssql/data
