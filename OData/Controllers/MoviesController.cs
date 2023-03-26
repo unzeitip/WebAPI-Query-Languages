@@ -21,7 +21,7 @@ namespace OData.Controllers
         [EnableQuery]
         public ActionResult Get()
         {
-            return Ok(_imdbContext.Actors);
+            return Ok(_imdbContext.Movies);
         }
 
         [HttpGet("movies({key})")]
