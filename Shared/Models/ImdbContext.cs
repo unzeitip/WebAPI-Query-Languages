@@ -4,6 +4,11 @@ namespace Shared.Models
 {
     public partial class ImdbContext : DbContext
     {
+        public ImdbContext(DbContextOptions options)
+            :base(options)
+        {            
+        }
+
         public virtual DbSet<Actor> Actors { get; set; } = null!;
         public virtual DbSet<Director> Directors { get; set; } = null!;
         public virtual DbSet<DirectorsGenre> DirectorsGenres { get; set; } = null!;
@@ -146,7 +151,7 @@ namespace Shared.Models
 
             modelBuilder.Entity<Role>(entity =>
             {
-                entity.HasKey(e => new { e.ActorId, e.MovieId, e.Role1 })
+                entity.HasKey(e => new { e.ActorId, e.MovieId, e.RoleName })
                     .HasName("PK_roles_actor_id");
 
                 entity.ToTable("roles");
@@ -159,7 +164,7 @@ namespace Shared.Models
 
                 entity.Property(e => e.MovieId).HasColumnName("movie_id");
 
-                entity.Property(e => e.Role1)
+                entity.Property(e => e.RoleName)
                     .HasMaxLength(100)
                     .HasColumnName("role");
 

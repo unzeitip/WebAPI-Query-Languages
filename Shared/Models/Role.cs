@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace Shared.Models
 {
@@ -7,7 +8,7 @@ namespace Shared.Models
     {
         public int ActorId { get; set; }
         public int MovieId { get; set; }
-        public string Role1 { get; set; } = null!;
+        public string RoleName { get; set; } = null!;
 
         public virtual Actor Actor { get; set; } = null!;
         public virtual Movie Movie { get; set; } = null!;
