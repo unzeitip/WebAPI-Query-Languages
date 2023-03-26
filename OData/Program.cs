@@ -2,7 +2,8 @@ using Microsoft.AspNetCore.OData;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OData.Edm;
 using Microsoft.OData.ModelBuilder;
-using Shared.Models;
+using OData.Models;
+using Shared;
 
 var builder = WebApplication.CreateBuilder(args);
 

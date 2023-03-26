@@ -1,12 +1,13 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using OData.Models;
 
-namespace Shared.Models
+namespace Shared
 {
     public partial class ImdbContext : DbContext
     {
         public ImdbContext(DbContextOptions options)
-            :base(options)
-        {            
+            : base(options)
+        {
         }
 
         public virtual DbSet<Actor> Actors { get; set; } = null!;
