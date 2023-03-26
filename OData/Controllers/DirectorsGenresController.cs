@@ -13,6 +13,7 @@ namespace OData.Controllers
         {
             _imdbContext = imdbContext;
         }
+
         [HttpGet("directorsGenres")]
         [HttpGet("directorsGenres/$count")]
         [EnableQuery]
