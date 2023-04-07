@@ -62,4 +62,4 @@ query{
 ```
 
 **Příklad nastavení Postman**
-![Příklad nastavení Postman](https://github.com/unzeitip/WebAPI-Query-Languages/tree/main/Shared/HotChocolateInPostmanExample.png)
+![Příklad nastavení Postman](https://raw.githubusercontent.com/unzeitip/WebAPI-Query-Languages/main/Shared/HotChocolateInPostmanExample.png)

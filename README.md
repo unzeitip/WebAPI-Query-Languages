@@ -11,4 +11,4 @@ pomocí příkazů z aktuálního adresáře:
 4. Jakmile běží databáze, je možné rozběhnout následující implementace:
 - [OData](https://github.com/unzeitip/WebAPI-Query-Languages/tree/main/OData)
 - [JsonAPI](https://github.com/unzeitip/WebAPI-Query-Languages//tree/main/JsonApi)
-- [Hot Chocolate](https://github.com/unzeitip/WebAPI-Query-Languages/tree/Dotnet/HotChocolate)
+- [Hot Chocolate](https://github.com/unzeitip/WebAPI-Query-Languages/tree/main/Hot-Chocolate)
