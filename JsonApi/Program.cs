@@ -1,5 +1,6 @@
 using JsonApi.Definitions;
 using JsonApiDotNetCore.Configuration;
+using JsonApiDotNetCore.Resources.Annotations;
 using Microsoft.EntityFrameworkCore;
 using Shared;
 
@@ -15,8 +16,13 @@ builder.Services.AddResourceDefinition<MoviesGenreDefinition>();
 
 builder.Services.AddJsonApi<ImdbContext>(options =>
 {
+    options.DefaultPageSize = null;
     options.Namespace = "api";
     options.IncludeExceptionStackTraceInErrors = true;
+
+    options.RelationshipLinks = LinkTypes.None;
+    options.ResourceLinks = LinkTypes.None;
+    options.TopLevelLinks = LinkTypes.None;
 });
 
 builder.Services.AddControllers();
