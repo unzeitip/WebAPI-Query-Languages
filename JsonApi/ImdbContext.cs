@@ -18,7 +18,7 @@ namespace Shared
         public virtual DbSet<Role> Roles { get; set; } = null!;
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-            => optionsBuilder.LogTo(Console.WriteLine);
+            => optionsBuilder.LogTo(Console.WriteLine, LogLevel.Information);
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

@@ -17,6 +17,9 @@ namespace Hot_Chocolate
         public virtual DbSet<MoviesGenre> MoviesGenres { get; set; } = null!;
         public virtual DbSet<Role> Roles { get; set; } = null!;
 
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+            => optionsBuilder.LogTo(Console.WriteLine, LogLevel.Information);
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Actor>(entity =>
