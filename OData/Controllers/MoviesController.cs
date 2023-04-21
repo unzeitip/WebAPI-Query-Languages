@@ -17,7 +17,6 @@ namespace OData.Controllers
         }
 
         [HttpGet("movies")]
-        [HttpGet("movies/$count")]
         [EnableQuery]
         public ActionResult Get()
         {

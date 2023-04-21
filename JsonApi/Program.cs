@@ -20,6 +20,7 @@ builder.Services.AddJsonApi<ImdbContext>(options =>
     options.Namespace = "api";
     options.IncludeExceptionStackTraceInErrors = true;
 
+    options.IncludeTotalResourceCount = false;
     options.RelationshipLinks = LinkTypes.None;
     options.ResourceLinks = LinkTypes.None;
     options.TopLevelLinks = LinkTypes.None;

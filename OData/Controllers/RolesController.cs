@@ -17,7 +17,6 @@ namespace OData.Controllers
         }
 
         [HttpGet("roles")]
-        [HttpGet("roles/$count")]
         [EnableQuery]
         public ActionResult Get()
         {

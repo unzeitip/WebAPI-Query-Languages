@@ -15,10 +15,6 @@ namespace Hot_Chocolate.Models
         public string? LastName { get; set; }
         public string? Gender { get; set; }
 
-        [UsePaging(MaxPageSize = int.MaxValue)]
-        [UseProjection]
-        [UseFiltering]
-        [UseSorting]
         public ICollection<Role> Roles { get; set; }
     }
 }

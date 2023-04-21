@@ -17,7 +17,6 @@ namespace OData.Controllers
         }
 
         [HttpGet("directors")]
-        [HttpGet("directors/$count")]
         [EnableQuery]
         public ActionResult Get()
         {
