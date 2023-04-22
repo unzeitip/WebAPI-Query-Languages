@@ -9,7 +9,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OData", "OData\OData.csproj
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JsonApi", "JsonApi\JsonApi.csproj", "{6356AC3F-C99F-4294-A926-202C36DFB3C5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hot-Chocolate", "Hot-Chocolate\Hot-Chocolate.csproj", "{B175ABA7-046E-4DC6-92B1-FB65AF8A7369}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hot-Chocolate", "Hot-Chocolate\Hot-Chocolate.csproj", "{B175ABA7-046E-4DC6-92B1-FB65AF8A7369}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A9643049-4621-4E9A-8670-1BAF3AF9770C}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.yml = docker-compose.yml
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

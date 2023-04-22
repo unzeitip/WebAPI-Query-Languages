@@ -1,0 +1,39 @@
+﻿version: '3.8'
+
+services:
+  odata:
+    build:
+      context: .
+      dockerfile: ./OData/Dockerfile
+    ports:
+      - "22900:80"
+    depends_on:
+      - shared-db
+
+  jsonapi:
+    build:
+      context: .
+      dockerfile: ./JsonApi/Dockerfile
+    ports:
+      - "26846:80"
+    depends_on:
+      - shared-db
+
+  hotchocolate:
+    build:
+      context: .
+      dockerfile: ./Hot-Chocolate/Dockerfile
+    ports:
+      - "36976:80"
+    depends_on:
+      - shared-db
+
+  shared-db:
+    build:
+      context: ./Shared
+      dockerfile: Dockerfile
+    environment:
+      SA_PASSWORD: unzepe01@upol.cz
+      ACCEPT_EULA: Y
+    ports:
+      - "1433:1433"

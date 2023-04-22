@@ -12,7 +12,7 @@ builder.Services.AddDbContext<ImdbContext>(options =>
 
 builder.Services.AddControllers().AddOData(
     options => options.EnableQueryFeatures(null)
-    .AddRouteComponents("api", GetEdmModel())); ;
+    .AddRouteComponents("api", GetEdmModel()));
 
 var app = builder.Build();
 
