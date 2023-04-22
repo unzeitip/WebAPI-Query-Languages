@@ -1,9 +1,5 @@
 # Zdrojový kód pro diplomovou práci s názvem *Dotazovací jazyky pro webové API*.
-Tento projekt bsahuje implementaci protokolu **ODATA** na platformě .NET
-## Spuštění
-Web API lze spustit klasicky pomocí příkazu *dotnet run* z aktuálního adresáře.
-
-Při spuštění z Visual Studia je nutné nastavit tento projekt jakožto jeden ze spouštěcích projektů.
+Tento projekt bsahuje implementaci dotazovacího jazyka **ODATA** na platformě .NET.
 
 ## Testování
 Pro testování lze využít prohlížeč nebo jakýkoliv *tool* umožnující odesílání *GET* požadavku přes HTTP protokol.

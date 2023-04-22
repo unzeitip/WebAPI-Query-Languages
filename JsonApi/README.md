@@ -1,13 +1,9 @@
-# Zdrojový kód pro diplomovou práci s názvem *Dotazovací jazyky pro webové API*.<br />
-Tento projekt bsahuje implementaci specifikace **JSON:API** na platformě .NET
-## Spuštění ##
-Web API lze spustit klasicky pomocí příkazu *dotnet run* z aktuálního adresáře.
+# Zdrojový kód pro diplomovou práci s názvem *Dotazovací jazyky pro webové API*
+Tento projekt bsahuje implementaci dotazovacího jazyka **JSON:API** na platformě .NET.
 
-Při spuštění z Visual Studia je nutné nastavit tento projekt jakožto jeden ze spouštěcích projektů.<br />
-
-## Testování ##
+## Testování
 Pro testování lze využít prohlížeč nebo jakýkoliv *tool* umožnující odesílání *GET* požadavku přes HTTP protokol.
-### Základní příklady ###
+### Základní příklady
 **1. Projekce:**.
 ```
 http://localhost:26846/api/actors?fields[actors]=firstName,lastName
