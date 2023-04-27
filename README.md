@@ -1,14 +1,22 @@
 # Zdrojový kód pro diplomovou práci s názvem *Dotazovací jazyky pro webové API*.
-Obsahuje implementace vybraných dotazovacích jazyků na platformě **.NET**
-## Jak začít
-1. Nejdřív je nutné stáhnout zálohu databáze pro testovací účely. Stáhnout soubor
-[imdb_ijs.bak](https://upolomouc-my.sharepoint.com/:u:/g/personal/unzepe01_upol_cz/EUn4EqHN1GZEgOZJ-bNTPlUB9fK4UiRPfSJrW5rYbLPXGQ?e=ZigBVX) a uložit ho do složky Shared.
-2. Poté stáhnout SQL Server docker image, vytvořit z něj vlastní, nakonfigurovaný a spustit ho. Stačí použít [dockerfile](https://github.com/unzeitip/WebAPI-Query-Languages/blob/main/Shared/dockerfile)
-pomocí příkazů z aktuálního adresáře:
-   1. docker build -t unzepe01:latest ./Shared
-   2. docker run -d --name unzepe01-sql-server -p 1433:1433 -t unzepe01:latest
+Tento projekt obsahuje implementace vybraných dotazovacích jazyků na platformě **.NET**
 
-4. Jakmile běží databáze, je možné rozběhnout následující implementace:
-- [OData](https://github.com/unzeitip/WebAPI-Query-Languages/tree/main/OData)
-- [JsonAPI](https://github.com/unzeitip/WebAPI-Query-Languages//tree/main/JsonApi)
-- [Hot Chocolate](https://github.com/unzeitip/WebAPI-Query-Languages/tree/main/Hot-Chocolate)
+## Požadavky
+- [Docker Desktop](https://docs.docker.com/desktop/)
+
+## Jak začít
+1. Stáhněte zálohu databáze pro testovací účely.
+Stáhněte soubor [imdb_ijs.bak](https://upolomouc-my.sharepoint.com/:u:/g/personal/unzepe01_upol_cz/EUn4EqHN1GZEgOZJ-bNTPlUB9fK4UiRPfSJrW5rYbLPXGQ?e=ZigBVX) a uložte ho do složky Shared.
+2. Sestavte a spusťte služby, včetně databázového serveru pomocí Docker Compose.
+Z aktálního adresáře spusťte příkaz `docker-compose up`.
+
+**Note**: První spuštění zahrnuje build projektů a import databáze. Tento proces může trvat několik minut.
+Úspěšné doknčení procesu končí následující zprávou:
+```
+Recovery is complete. This is an informational message only. No user action is required.
+```
+## Kam pokračovat
+Po úspěšném spuštění je možné otestovat jednotlivé dotazovací jazyky pomocí následujících odkazů:
+- [OData](./OData)
+- [JSON:API](./JsonApi)
+- [HotChocolate](./Hot-Chocolate)

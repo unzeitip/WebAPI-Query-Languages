@@ -1,13 +1,9 @@
-# Zdrojový kód pro diplomovou práci s názvem *Dotazovací jazyky pro webové API*.<br />
-Tento projekt bsahuje implementaci specifikace **GraphQL** na platformě .NET: **Hot Chocolate**.
-## Spuštění ##
-Web API lze spustit klasicky pomocí příkazu *dotnet run* z aktuálního adresáře.
+# Zdrojový kód pro diplomovou práci s názvem *Dotazovací jazyky pro webové API*
+Tento projekt bsahuje implementaci dotazovacího jazyka **HotChocolate** na platformě .NET.
 
-Při spuštění z Visual Studia je nutné nastavit tento projekt jakožto jeden ze spouštěcích projektů.<br />
-
-## Testování ##
+## Testování
 Pro testování lze využít aplikaci Postman nebo jakýkoliv *tool* umožnující odesílání *POST* požadavku přes HTTP protokol.
-### Základní příklady ###
+### Základní příklady
 **Všechny příklady se líší v *tělu* POST requestu. Odesílají se na následující endpoint:**
 ```
 http://localhost:36976/api
@@ -62,4 +58,4 @@ query{
 ```
 
 **Příklad nastavení Postman**
-![Příklad nastavení Postman](https://raw.githubusercontent.com/unzeitip/WebAPI-Query-Languages/main/Shared/HotChocolateInPostmanExample.png)
+![Příklad nastavení Postman](../Shared/HotChocolateInPostmanExample.png)
