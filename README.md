@@ -11,7 +11,7 @@ Stáhněte soubor [imdb_ijs.bak](https://upolomouc-my.sharepoint.com/:u:/g/perso
 Z aktálního adresáře spusťte příkaz `docker-compose up`.
 
 **Note**: První spuštění zahrnuje build projektů a import databáze. Tento proces může trvat několik minut.
-Úspěšné doknčení procesu končí následující zprávou:
+Úspěšné dokončení procesu končí následující zprávou:
 ```
 Recovery is complete. This is an informational message only. No user action is required.
 ```
