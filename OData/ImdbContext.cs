@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using OData.Models;
 
-namespace Shared
+namespace OData
 {
     public partial class ImdbContext : DbContext
     {
@@ -92,8 +92,8 @@ namespace Shared
 
             modelBuilder.Entity<DirectorsGenre>(entity =>
             {
-                entity.HasKey(e => new { e.DirectorId, e.Genre })
-                    .HasName("PK_directors_genres_director_id");
+                entity.HasKey(e => e.Id)
+                    .HasName("PK_directors_genres");
 
                 entity.ToTable("directors_genres");
 
@@ -134,8 +134,8 @@ namespace Shared
 
             modelBuilder.Entity<MoviesGenre>(entity =>
             {
-                entity.HasKey(e => new { e.MovieId, e.Genre })
-                    .HasName("PK_movies_genres_movie_id");
+                entity.HasKey(e => e.Id)
+                    .HasName("PK_movies_genres");
 
                 entity.ToTable("movies_genres");
 
@@ -155,8 +155,8 @@ namespace Shared
 
             modelBuilder.Entity<Role>(entity =>
             {
-                entity.HasKey(e => new { e.ActorId, e.MovieId, e.RoleName })
-                    .HasName("PK_roles_actor_id");
+                entity.HasKey(e => e.Id)
+                    .HasName("PK_roles");
 
                 entity.ToTable("roles");
 

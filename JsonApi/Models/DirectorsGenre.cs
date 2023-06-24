@@ -1,14 +1,10 @@
 ﻿using JsonApiDotNetCore.Resources;
 using JsonApiDotNetCore.Resources.Annotations;
-using System.ComponentModel.DataAnnotations.Schema;
 
 namespace JsonApi.Models
 {
-    public partial class DirectorsGenre : Identifiable<dynamic>
+    public partial class DirectorsGenre : Identifiable<int>
     {
-        [NotMapped]
-        public override dynamic Id { get; set; } = null!;
-
         public int DirectorId { get; set; }
 
         [Attr]

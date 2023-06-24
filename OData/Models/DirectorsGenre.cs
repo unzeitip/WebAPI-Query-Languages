@@ -1,10 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace OData.Models
+﻿namespace OData.Models
 {
     public partial class DirectorsGenre
     {
+        public int Id { get; set; }
         public int DirectorId { get; set; }
         public string Genre { get; set; } = null!;
         public float? Prob { get; set; }

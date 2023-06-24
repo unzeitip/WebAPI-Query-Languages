@@ -1,14 +1,10 @@
 ﻿using JsonApiDotNetCore.Resources;
 using JsonApiDotNetCore.Resources.Annotations;
-using System.ComponentModel.DataAnnotations.Schema;
 
 namespace JsonApi.Models
 {
-    public partial class Role : Identifiable<dynamic>
+    public partial class Role : Identifiable<int>
     {
-        [NotMapped]
-        public override dynamic Id { get; set; } = null!;
-
         public int ActorId { get; set; }
         public int MovieId { get; set; }
 

@@ -5,9 +5,9 @@ using JsonApiDotNetCore.Services;
 
 namespace OData.Controllers
 {
-    public class MoviesGenresController : JsonApiController<MoviesGenre, dynamic>
+    public class MoviesGenresController : JsonApiController<MoviesGenre, int>
     {
-        public MoviesGenresController(IJsonApiOptions options, IResourceGraph resourceGraph, ILoggerFactory loggerFactory, IResourceService<MoviesGenre, dynamic> resourceService)
+        public MoviesGenresController(IJsonApiOptions options, IResourceGraph resourceGraph, ILoggerFactory loggerFactory, IResourceService<MoviesGenre, int> resourceService)
             : base(options, resourceGraph, loggerFactory, resourceService)
         {
         }

@@ -1,18 +1,12 @@
-using JsonApi.Definitions;
+using JsonApi;
 using JsonApiDotNetCore.Configuration;
 using JsonApiDotNetCore.Resources.Annotations;
 using Microsoft.EntityFrameworkCore;
-using Shared;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddDbContext<ImdbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("imdb")));
-
-// Compose key entites have to have set default property to sort by
-builder.Services.AddResourceDefinition<RoleDefinition>();
-builder.Services.AddResourceDefinition<DirectorsGenreDefinition>();
-builder.Services.AddResourceDefinition<MoviesGenreDefinition>();
 
 builder.Services.AddJsonApi<ImdbContext>(options =>
 {

@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-
-namespace Hot_Chocolate.Models
+﻿namespace Hot_Chocolate.Models
 {
     public partial class Role
     {
+        public int Id { get; set; }
         public int ActorId { get; set; }
         public int MovieId { get; set; }
         public string RoleName { get; set; } = null!;
