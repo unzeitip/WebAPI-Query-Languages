@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace OData.Models
+﻿namespace OData.Models
 {
     public partial class Movie
     {
@@ -18,6 +15,7 @@ namespace OData.Models
         public float? Rank { get; set; }
 
         public virtual ICollection<MoviesGenre> MoviesGenres { get; set; }
+
         public virtual ICollection<Role> Roles { get; set; }
 
         public virtual ICollection<Director> Directors { get; set; }

@@ -5,9 +5,9 @@ using JsonApiDotNetCore.Services;
 
 namespace OData.Controllers
 {
-    public class RolesController : JsonApiController<Role, dynamic>
+    public class RolesController : JsonApiController<Role, int>
     {
-        public RolesController(IJsonApiOptions options, IResourceGraph resourceGraph, ILoggerFactory loggerFactory, IResourceService<Role, dynamic> resourceService)
+        public RolesController(IJsonApiOptions options, IResourceGraph resourceGraph, ILoggerFactory loggerFactory, IResourceService<Role, int> resourceService)
             : base(options, resourceGraph, loggerFactory, resourceService)
         {
         }

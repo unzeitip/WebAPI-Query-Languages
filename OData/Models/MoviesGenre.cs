@@ -1,10 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace OData.Models
+﻿namespace OData.Models
 {
     public partial class MoviesGenre
     {
+        public int Id { get; set; }
         public int MovieId { get; set; }
         public string Genre { get; set; } = null!;
 
