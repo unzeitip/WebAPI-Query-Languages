@@ -6,7 +6,7 @@ Tento projekt obsahuje implementace vybraných dotazovacích jazyků na platform
 
 ## Jak začít
 1. Stáhněte zálohu databáze pro testovací účely.
-Stáhněte soubor [imdb_ijs.bak](https://upolomouc-my.sharepoint.com/:u:/g/personal/unzepe01_upol_cz/EUn4EqHN1GZEgOZJ-bNTPlUB9fK4UiRPfSJrW5rYbLPXGQ?e=ZigBVX) a uložte ho do složky Shared.
+Stáhněte soubor [imdb_ijs.bak](https://upolomouc-my.sharepoint.com/:u:/g/personal/unzepe01_upol_cz/EZ7UzAyqvIhOpX0hSHfyE_MBYvCBnnM2TwHpp3ZaVARx_w?e=ujAZwI) a uložte ho do složky Shared.
 2. Sestavte a spusťte služby, včetně databázového serveru pomocí Docker Compose.
 Z aktálního adresáře spusťte příkaz `docker-compose up`.
 

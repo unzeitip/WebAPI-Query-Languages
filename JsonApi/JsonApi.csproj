@@ -8,12 +8,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <!--<PackageReference Include="JsonApiDotNetCore" Version="5.1.2" />-->
+    <PackageReference Include="JsonApiDotNetCore" Version="5.1.2" />
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.17.2" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\JsonApiDotNetCore\src\JsonApiDotNetCore\JsonApiDotNetCore.csproj" />
     <ProjectReference Include="..\Shared\Shared.csproj" />
   </ItemGroup>
 
