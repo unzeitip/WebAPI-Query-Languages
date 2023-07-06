@@ -3,7 +3,7 @@ import http from 'k6/http';
 export default function () {
   let query = `
     query {
-      actors(take: 5, where: { roles: { some: { movie: { year: {eq: 2000} } } } }) {
+      actors(take: 1000, where: { roles: { some: { movie: { year: {eq: 2000} } } } }) {
         items{
             id
             firstName
