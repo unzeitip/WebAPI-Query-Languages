@@ -30,5 +30,15 @@ namespace Hot_Chocolate
         [UseSorting]
         public IQueryable<Role> GetRoles(ImdbContext context)
             => context.Roles;
+
+        [UseOffsetPaging(MaxPageSize = int.MaxValue)]
+        [UseProjection]
+        [UseFiltering]
+        [UseSorting]
+        public IQueryable<Director> GetDirectors(ImdbContext context)
+            => context.Directors;
+
+        public Director? GetDirector(ImdbContext context, int id)
+            => context.Directors.FirstOrDefault(x => x.Id == id);
     }
 }
