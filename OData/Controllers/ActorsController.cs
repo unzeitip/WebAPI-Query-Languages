@@ -16,7 +16,7 @@ namespace OData.Controllers
         }
 
         [HttpGet("actors")]
-        [EnableQuery]
+        [EnableQuery(MaxAnyAllExpressionDepth = 3, MaxExpansionDepth = 4)]
         public ActionResult Get()
         {
             return Ok(_imdbContext.Actors);
