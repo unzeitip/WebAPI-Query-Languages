@@ -4,7 +4,7 @@ namespace Hot_Chocolate
 {
     public class Query
     {
-        [UseOffsetPaging(MaxPageSize = int.MaxValue, DefaultPageSize = int.MaxValue)]
+        [UseOffsetPaging]
         [UseProjection]
         [UseFiltering]
         [UseSorting]
@@ -14,7 +14,7 @@ namespace Hot_Chocolate
         public Actor? GetActor(ImdbContext context, int id)
             => context.Actors.FirstOrDefault(x => x.Id == id);
 
-        [UseOffsetPaging(MaxPageSize = int.MaxValue, DefaultPageSize = int.MaxValue)]
+        [UseOffsetPaging]
         [UseProjection]
         [UseFiltering]
         [UseSorting]
@@ -24,14 +24,14 @@ namespace Hot_Chocolate
         public Movie? GetMovie(ImdbContext context, int id)
             => context.Movies.FirstOrDefault(x => x.Id == id);
 
-        [UseOffsetPaging(MaxPageSize = int.MaxValue, DefaultPageSize = int.MaxValue)]
+        [UseOffsetPaging]
         [UseProjection]
         [UseFiltering]
         [UseSorting]
         public IQueryable<Role> GetRoles(ImdbContext context)
             => context.Roles;
 
-        [UseOffsetPaging(MaxPageSize = int.MaxValue, DefaultPageSize = int.MaxValue)]
+        [UseOffsetPaging]
         [UseProjection]
         [UseFiltering]
         [UseSorting]
