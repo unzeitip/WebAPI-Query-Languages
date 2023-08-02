@@ -1,8 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.OData.Formatter;
 using Microsoft.AspNetCore.OData.Query;
 using Microsoft.AspNetCore.OData.Routing.Controllers;
-using System.Linq;
 
 namespace OData.Controllers
 {
@@ -10,6 +8,7 @@ namespace OData.Controllers
     public class RolesController : ODataController
     {
         private readonly ImdbContext _imdbContext;
+
         public RolesController(ImdbContext imdbContext)
         {
             _imdbContext = imdbContext;

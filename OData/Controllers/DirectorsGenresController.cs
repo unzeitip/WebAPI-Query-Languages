@@ -8,6 +8,7 @@ namespace OData.Controllers
     public class DirectorsGenresController : ODataController
     {
         private readonly ImdbContext _imdbContext;
+
         public DirectorsGenresController(ImdbContext imdbContext)
         {
             _imdbContext = imdbContext;
