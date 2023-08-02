@@ -3,7 +3,7 @@ using JsonApiDotNetCore.Configuration;
 using JsonApiDotNetCore.Controllers;
 using JsonApiDotNetCore.Services;
 
-namespace OData.Controllers
+namespace JsonApi.Controllers
 {
     public class MoviesGenresController : JsonApiController<MoviesGenre, int>
     {
