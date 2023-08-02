@@ -26,6 +26,20 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2", "2", "{92DD77C2-0A06-49
 		Tests\2\odata.js = Tests\2\odata.js
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1", "1", "{480BD8FB-2DDB-495B-B668-568FA82447E7}"
+	ProjectSection(SolutionItems) = preProject
+		Tests\1\hotchocolate.js = Tests\1\hotchocolate.js
+		Tests\1\jsonapi.js = Tests\1\jsonapi.js
+		Tests\1\odata.js = Tests\1\odata.js
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3", "3", "{12B65CA3-5A51-4228-80A6-F09CAF8DE7E4}"
+	ProjectSection(SolutionItems) = preProject
+		Tests\3\hotchocolate.js = Tests\3\hotchocolate.js
+		Tests\3\jsonapi.js = Tests\3\jsonapi.js
+		Tests\3\odata.js = Tests\3\odata.js
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -55,6 +69,8 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{679F3B0A-96DF-4CD1-A918-84FB338ECA9C} = {A9643049-4621-4E9A-8670-1BAF3AF9770C}
 		{92DD77C2-0A06-49FC-8060-F01ACC75C6D3} = {679F3B0A-96DF-4CD1-A918-84FB338ECA9C}
+		{480BD8FB-2DDB-495B-B668-568FA82447E7} = {679F3B0A-96DF-4CD1-A918-84FB338ECA9C}
+		{12B65CA3-5A51-4228-80A6-F09CAF8DE7E4} = {679F3B0A-96DF-4CD1-A918-84FB338ECA9C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {57DB3650-3D47-49C7-8567-5AD2511B8A83}
