@@ -2,26 +2,31 @@ import http from 'k6/http';
 
 export default function () {
   let query = `
-    query {
-      actors(take: 1000, where: { roles: { some: { movie: { year: {eq: 2000} } } } }) {
-        items{
+  query {
+    actors(
+        where: { roles: { some:
+            { movie: { year: { eq: 2000 } } }
+         } },
+        take: 10000
+    ) {
+        items {
+        id
+        firstName
+        lastName
+        gender
+        roles {
             id
-            firstName
-            lastName
-            gender
-            roles{
+            roleName
+            movie {
                 id
-                roleName
-                movie{
-                    id
-                    name
-                    year
-                    rank
-                }
-            }
+                name
+                year
+                rank
+          }
         }
       }
-    }`;
+    }
+  }`;
 
   const headers = {
     'Content-Type': 'application/json',
